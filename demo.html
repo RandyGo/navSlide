@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <meta name="MobileOptimized" content="320">
+  <title></title>
+  <style>
+    header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    nav{height: 50px;background: #000;line-height: 50px;}
+    nav>a{display: block;float:left;height: 50px;text-align: center;color: #fff;padding: 0 10px;}
+    nav>a.active{font-weight: bold;}
+  </style>
+  <script src="jq.js"></script>
+  <script src="jqSwipe.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="active">Design & Manufacture</a>
+      <a>Frame Types</a>
+      <a>Frame Materials</a>
+      <a>Style & Trends</a>
+      <a>Popular Shapes</a>
+      <a>Colors</a>
+      <a>Sizes</a>
+    </nav>
+  </header>
+
+  <script>
+    $("nav").jqSwipe("active");
+    $(window).resize(function() {
+        $("nav").jqSwipe("active");
+    })
+  </script>
+</body>
+</html>
