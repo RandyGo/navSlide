@@ -23,7 +23,7 @@
         for(var j = 0; j < itemNum; j++) {
             binderWidth += $children.eq(j).innerWidth();
         }
-        binderWidth += 5;
+        binderWidth += 10;
         initSwipe();
 
         /**
